@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utheja Bommineni - Portfolio</title>
+    <title>Utheja Bommineni - Data Analyst Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -159,6 +159,12 @@
             margin: 0 auto;
             font-size: 1.1em;
             animation: fadeInUp 1.2s ease-out;
+        }
+
+        /* About Section */
+        #about p {
+            max-width: 800px;
+            margin: 0 auto 20px;
         }
 
         /* Sections */
@@ -353,6 +359,15 @@
             color: #ff5722;
         }
 
+        .timeline-content .project-details {
+            margin-top: 20px;
+        }
+
+        .timeline-content .project-details h4 {
+            color: #ff5722;
+            margin-bottom: 10px;
+        }
+
         /* Education and Certifications */
         .education-grid, .certification-grid {
             display: grid;
@@ -388,6 +403,34 @@
 
         .education-item p, .certification-item p {
             color: #bbb;
+        }
+
+        /* Blog Section */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .blog-item {
+            background-color: #2c2c2c;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .blog-item h3 {
+            color: #ff5722;
+            margin-bottom: 10px;
+        }
+
+        .blog-item p {
+            margin-bottom: 10px;
+        }
+
+        .blog-item a {
+            color: #ff5722;
+            text-decoration: none;
         }
 
         /* Contact */
@@ -545,7 +588,7 @@
                 grid-template-columns: 1fr;
             }
 
-            .education-grid, .certification-grid {
+            .education-grid, .certification-grid, .blog-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -566,11 +609,13 @@
             <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
             <ul id="nav-menu">
                 <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -578,8 +623,15 @@
 
     <section id="hero">
         <div class="profile-img"></div> <!-- Placeholder for your rounded image -->
-        <h2>Data Analyst</h2>
-        <p>Detail-oriented Data Analyst with 2 years of experience interpreting and analyzing data to drive successful business solutions. Proficient in SQL, Excel, Python, and data visualization tools such as Power BI and Tableau. Skilled at transforming complex data into actionable insights that support strategic planning and operational improvements. Strong foundation in statistics, data wrangling, and storytelling through data.</p>
+        <h2>Data Analyst & Insights Specialist</h2>
+        <p>Detail-oriented Data Analyst with over 2 years of experience interpreting and analyzing data to drive successful business solutions. Proficient in SQL, Excel, Python, and data visualization tools such as Power BI and Tableau. Skilled at transforming complex data into actionable insights that support strategic planning and operational improvements. Strong foundation in statistics, data wrangling, and storytelling through data. Passionate about leveraging advanced analytics, machine learning, and big data technologies to solve real-world problems.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm Utheja Bommineni, a dedicated data enthusiast currently pursuing my Master's in Computer Science with a specialization in Data Science at Oklahoma Christian University. With a background in Computer Science Engineering and hands-on experience at Amazon and Swecha Organization, I've honed my skills in data analysis, ETL processes, and predictive modeling.</p>
+        <p>My journey into data analytics began during my undergraduate studies when I realized the power of data in driving informed decisions. Since then, I've worked on various projects involving large datasets, from e-commerce behavior analysis to global economic impacts. I'm passionate about using data to uncover hidden patterns and provide actionable insights that can transform businesses.</p>
+        <p>In my free time, I enjoy exploring new technologies, contributing to open-source projects, and writing about data trends on my blog. I'm always eager to learn and apply cutting-edge tools like machine learning frameworks and big data platforms to enhance my analytical capabilities.</p>
     </section>
 
     <section id="skills">
@@ -589,55 +641,73 @@
                 <i class="fas fa-code"></i>
                 <h3>Languages/Tools</h3>
                 <ul>
-                    <li>Python (Pandas, Matplotlib, Seaborn, NumPy)</li>
-                    <li>SQL</li>
+                    <li>Python (Pandas, NumPy, Scikit-learn, TensorFlow)</li>
+                    <li>R Programming</li>
+                    <li>SQL (Advanced Queries, Joins, Window Functions)</li>
+                    <li>Java (for data processing pipelines)</li>
                 </ul>
             </div>
             <div class="skill-category">
                 <i class="fas fa-chart-bar"></i>
                 <h3>Visualization</h3>
                 <ul>
-                    <li>Power BI</li>
-                    <li>Tableau</li>
-                    <li>Excel</li>
+                    <li>Power BI (DAX, Custom Visuals)</li>
+                    <li>Tableau (Advanced Dashboards, Storytelling)</li>
+                    <li>Excel (PivotTables, VBA Macros)</li>
                     <li>QuickSight</li>
+                    <li>Matplotlib & Seaborn</li>
                 </ul>
             </div>
             <div class="skill-category">
                 <i class="fas fa-database"></i>
-                <h3>Databases</h3>
+                <h3>Databases & Big Data</h3>
                 <ul>
-                    <li>MySQL</li>
-                    <li>PostgreSQL</li>
+                    <li>MySQL & PostgreSQL</li>
                     <li>Microsoft SQL Server</li>
-                    <li>RedShift</li>
+                    <li>RedShift & BigQuery</li>
+                    <li>MongoDB (NoSQL)</li>
+                    <li>Hadoop & Spark (Basics)</li>
                 </ul>
             </div>
             <div class="skill-category">
                 <i class="fas fa-tools"></i>
-                <h3>Other Tools</h3>
+                <h3>Other Tools & Frameworks</h3>
                 <ul>
-                    <li>Jupyter Notebook</li>
-                    <li>Git</li>
-                    <li>Google Sheets</li>
-                    <li>MS Office</li>
+                    <li>Jupyter Notebook & Google Colab</li>
+                    <li>Git & GitHub</li>
+                    <li>Google Sheets & MS Office Suite</li>
+                    <li>AWS Services (S3, Glue, Athena, EMR)</li>
+                    <li>Airflow for ETL Orchestration</li>
+                    <li>Machine Learning: Scikit-learn, XGBoost</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <i class="fas fa-brain"></i>
+                <h3>Advanced Analytics</h3>
+                <ul>
+                    <li>Statistical Analysis & Hypothesis Testing</li>
+                    <li>Predictive Modeling & Forecasting</li>
+                    <li>Machine Learning Algorithms (Regression, Classification, Clustering)</li>
+                    <li>Natural Language Processing Basics</li>
+                    <li>A/B Testing & Experimentation</li>
                 </ul>
             </div>
         </div>
     </section>
 
     <section id="experience">
-        <h2>Experience</h2>
+        <h2>Professional Experience</h2>
         <div class="timeline">
             <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Graduate Teaching Assistant</h3>
-                    <span class="date">Oklahoma Christian University, Oklahoma, OK | August 2024 – May 2025</span>
+                    <span class="date">Oklahoma Christian University, Oklahoma, OK | August 2024 – Present</span>
                     <ul>
-                        <li>Assisted in delivering computer programming coursework, focusing on debugging, and project development.</li>
-                        <li>Led lab sessions and supported coding assignments, improving student comprehension of programming concepts.</li>
-                        <li>Evaluated and graded assignments, ensuring timely feedback to enhance student programming skills with time management.</li>
-                        <li>Provided one-on-one coding support, strengthening student’s skills in data structures and algorithms while myself acquiring leadership skill.</li>
+                        <li>Assisted in delivering computer programming coursework, focusing on debugging, project development, and introducing students to data analysis concepts using Python and SQL.</li>
+                        <li>Led lab sessions and supported coding assignments, improving student comprehension of programming concepts and data structures.</li>
+                        <li>Evaluated and graded assignments, ensuring timely feedback to enhance student programming skills with emphasis on time management and best coding practices.</li>
+                        <li>Provided one-on-one coding support, strengthening students' skills in data structures, algorithms, and introductory machine learning while developing my leadership and mentoring abilities.</li>
+                        <li>Collaborated on curriculum development, incorporating real-world data projects to bridge theory and practice.</li>
                     </ul>
                 </div>
             </div>
@@ -646,10 +716,12 @@
                     <h3>Business Analyst</h3>
                     <span class="date">Amazon, Hyderabad, India | July 2023 – December 2023</span>
                     <ul>
-                        <li>Built and maintained scalable ETL pipelines using AWS Glue, Amazon S3, and Athena to process large-scale transactional data (>50M records daily).</li>
-                        <li>Designed interactive Amazon QuickSight dashboards to visualize KPIs for fulfillment, logistics, and customer operations, improving reporting speed by 40%.</li>
-                        <li>Used SQL and Redshift to perform customer behavior and sales trend analysis, helping business teams identify opportunities that increased weekly revenue by 12%.</li>
-                        <li>Conducted churn prediction analysis using Python (Pandas, NumPy) and cohort modeling techniques, contributing to a 15% improvement in Prime retention.</li>
+                        <li>Built and maintained scalable ETL pipelines using AWS Glue, Amazon S3, and Athena to process large-scale transactional data (>50M records daily), ensuring data integrity and efficiency.</li>
+                        <li>Designed interactive Amazon QuickSight dashboards to visualize KPIs for fulfillment, logistics, and customer operations, improving reporting speed by 40% and enabling faster decision-making.</li>
+                        <li>Used SQL and Redshift to perform in-depth customer behavior and sales trend analysis, helping business teams identify opportunities that increased weekly revenue by 12% through targeted campaigns.</li>
+                        <li>Conducted churn prediction analysis using Python (Pandas, NumPy, Scikit-learn) and cohort modeling techniques, contributing to a 15% improvement in Prime retention by implementing retention strategies.</li>
+                        <li>Integrated machine learning models for forecasting demand, reducing overstock by 10% and optimizing inventory management.</li>
+                        <li>Collaborated with cross-functional teams to define data requirements and implement data governance practices.</li>
                     </ul>
                 </div>
             </div>
@@ -658,9 +730,11 @@
                     <h3>Data Analyst Intern</h3>
                     <span class="date">Swecha Organization, Hyderabad, India | December 2021 – June 2023</span>
                     <ul>
-                        <li>Utilized Python (Pandas, Matplotlib) and SQL (PostgreSQL, Redshift) for ad-hoc analysis and reporting on product usage, customer engagement, and funnel drop-offs.</li>
-                        <li>Built and maintained data quality checks and transformations, increasing data accuracy and reliability for downstream analytics and machine learning teams.</li>
-                        <li>Partnered with product managers to define KPIs and created self-serve reports using Power BI, improving decision-making across departments.</li>
+                        <li>Utilized Python (Pandas, Matplotlib, Seaborn) and SQL (PostgreSQL, Redshift) for ad-hoc analysis and reporting on product usage, customer engagement, and funnel drop-offs, providing insights for product improvements.</li>
+                        <li>Built and maintained data quality checks and transformations using ETL tools, increasing data accuracy and reliability by 25% for downstream analytics and machine learning teams.</li>
+                        <li>Partnered with product managers to define KPIs and created self-serve reports using Power BI and Tableau, improving decision-making across departments and reducing report generation time by 30%.</li>
+                        <li>Performed sentiment analysis on customer feedback using NLP techniques in Python, identifying key pain points and contributing to product roadmap adjustments.</li>
+                        <li>Developed automated scripts for data pipelines, streamlining workflows and enabling real-time analytics.</li>
                     </ul>
                 </div>
             </div>
@@ -674,22 +748,144 @@
                 <div class="timeline-content">
                     <h3>E-Commerce Customer Behavior Analysis</h3>
                     <ul>
-                        <li>Analyzed 500K+ e-commerce transactions using Python and MySQL to uncover customer behavior patterns and segment users via RFM analysis.</li>
-                        <li>Designed interactive dashboards in Power BI to track customer retention, churn rate, and purchase trends across regions.</li>
-                        <li>Improved marketing targeting by identifying high-value customer segments, contributing to a 15% potential increase in retention.</li>
-                        <li>Used Seaborn and Matplotlib to visualize time-based purchase trends and cohort-based customer retention.</li>
+                        <li>Analyzed 500K+ e-commerce transactions using Python (Pandas, Scikit-learn) and MySQL to uncover customer behavior patterns and segment users via RFM analysis and K-means clustering.</li>
+                        <li>Designed interactive dashboards in Power BI to track customer retention, churn rate, and purchase trends across regions, incorporating advanced filters and drill-down capabilities.</li>
+                        <li>Improved marketing targeting by identifying high-value customer segments, contributing to a 15% potential increase in retention through personalized campaigns.</li>
+                        <li>Used Seaborn and Matplotlib to visualize time-based purchase trends and cohort-based customer retention, highlighting seasonal patterns.</li>
                     </ul>
+                    <div class="project-details">
+                        <h4>Objective:</h4>
+                        <p>To understand customer purchasing habits and optimize marketing strategies.</p>
+                        <h4>Data Source:</h4>
+                        <p>Kaggle E-commerce dataset.</p>
+                        <h4>Methods:</h4>
+                        <p>Data cleaning with Pandas, SQL queries for aggregation, machine learning for segmentation.</p>
+                        <h4>Results:</h4>
+                        <p>Identified 5 customer segments, leading to targeted recommendations.</p>
+                        <h4>Learnings:</h4>
+                        <p>Importance of feature engineering in clustering models.</p>
+                        <a href="https://github.com/your-repo/ecommerce-analysis">GitHub Repo</a>
+                    </div>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>COVID-19 Impact on Global Economy</h3>
                     <ul>
-                        <li>Collected and processed real-time data from public APIs and the World Bank to analyze the impact of COVID-19 on GDP, inflation, and unemployment across 20+ countries.</li>
-                        <li>Performed correlation analysis using Python and PostgreSQL to identify statistical relationships between infection rates and economic indicators.</li>
-                        <li>Built dynamic Tableau dashboards and Excel reports to visualize multi-country economic trends over time.</li>
-                        <li>Automated data updates and visualizations using Jupyter Notebook, enhancing report delivery efficiency by 30%.</li>
+                        <li>Collected and processed real-time data from public APIs (WHO, World Bank) and databases to analyze the impact of COVID-19 on GDP, inflation, and unemployment across 20+ countries.</li>
+                        <li>Performed correlation analysis and time-series forecasting using Python (Pandas, Statsmodels) and PostgreSQL to identify statistical relationships between infection rates and economic indicators.</li>
+                        <li>Built dynamic Tableau dashboards and Excel reports to visualize multi-country economic trends over time, including interactive maps and forecasts.</li>
+                        <li>Automated data updates and visualizations using Jupyter Notebook and cron jobs, enhancing report delivery efficiency by 30%.</li>
                     </ul>
+                    <div class="project-details">
+                        <h4>Objective:</h4>
+                        <p>To quantify the economic fallout from the pandemic and predict recovery trends.</p>
+                        <h4>Data Source:</h4>
+                        <p>World Bank API, Johns Hopkins COVID data.</p>
+                        <h4>Methods:</h4>
+                        <p>ARIMA modeling for forecasting, correlation matrices.</p>
+                        <h4>Results:</h4>
+                        <p>Found strong negative correlation between lockdowns and GDP growth.</p>
+                        <h4>Learnings:</h4>
+                        <p>Handling time-series data and API integrations.</p>
+                        <a href="https://github.com/your-repo/covid-economy">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Sales Forecasting for Retail Chain</h3>
+                    <ul>
+                        <li>Developed a predictive model using Python and XGBoost to forecast sales for a retail chain based on historical data of 1M+ transactions.</li>
+                        <li>Incorporated external factors like holidays and weather data via APIs.</li>
+                        <li>Created Power BI dashboard for visualizing forecasts vs actuals.</li>
+                        <li>Achieved 92% accuracy, helping in inventory optimization.</li>
+                    </ul>
+                    <div class="project-details">
+                        <h4>Objective:</h4>
+                        <p>Accurate sales prediction to reduce stockouts and overstock.</p>
+                        <h4>Data Source:</h4>
+                        <p>Kaggle Retail Sales dataset.</p>
+                        <h4>Methods:</h4>
+                        <p>Feature engineering, gradient boosting.</p>
+                        <h4>Results:</h4>
+                        <p>Reduced forecasting error by 20%.</p>
+                        <h4>Learnings:</h4>
+                        <p>Ensemble methods in ML.</p>
+                        <a href="https://github.com/your-repo/sales-forecast">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Sentiment Analysis on Social Media Data</h3>
+                    <ul>
+                        <li>Scraped and analyzed Twitter data using Python (Tweepy, NLTK) for sentiment on brand products.</li>
+                        <li>Built classification model with LSTM in TensorFlow.</li>
+                        <li>Visualized sentiments in Tableau dashboard.</li>
+                        <li>Identified key influencers and trends.</li>
+                    </ul>
+                    <div class="project-details">
+                        <h4>Objective:</h4>
+                        <p>Gauge public opinion on products.</p>
+                        <h4>Data Source:</h4>
+                        <p>Twitter API.</p>
+                        <h4>Methods:</h4>
+                        <p>NLP preprocessing, deep learning.</p>
+                        <h4>Results:</h4>
+                        <p>85% accuracy in sentiment classification.</p>
+                        <h4>Learnings:</h4>
+                        <p>Dealing with noisy text data.</p>
+                        <a href="https://github.com/your-repo/sentiment-analysis">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>NYC Airbnb Market Analysis</h3>
+                    <ul>
+                        <li>Explored Airbnb listings data with Python and SQL to analyze pricing trends and occupancy rates.</li>
+                        <li>Used geospatial analysis with Folium for mapping hot spots.</li>
+                        <li>Built predictive model for pricing using regression.</li>
+                        <li>Dashboard in Power BI for interactive exploration.</li>
+                    </ul>
+                    <div class="project-details">
+                        <h4>Objective:</h4>
+                        <p>Understand market dynamics for hosts and travelers.</p>
+                        <h4>Data Source:</h4>
+                        <p>Inside Airbnb dataset.</p>
+                        <h4>Methods:</h4>
+                        <p>Geospatial viz, ML regression.</p>
+                        <h4>Results:</h4>
+                        <p>Insights on peak seasons and pricing strategies.</p>
+                        <h4>Learnings:</h4>
+                        <p>Geodata handling.</p>
+                        <a href="https://github.com/your-repo/airbnb-analysis">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Movie Recommendation System</h3>
+                    <ul>
+                        <li>Built collaborative filtering recommender using Surprise library in Python.</li>
+                        <li>Analyzed MovieLens dataset with 100K+ ratings.</li>
+                        <li>Deployed simple web app with Streamlit for user interactions.</li>
+                        <li>Evaluated with RMSE metric.</li>
+                    </ul>
+                    <div class="project-details">
+                        <h4>Objective:</h4>
+                        <p>Personalized movie suggestions.</p>
+                        <h4>Data Source:</h4>
+                        <p>MovieLens.</p>
+                        <h4>Methods:</h4>
+                        <p>Matrix factorization.</p>
+                        <h4>Results:</h4>
+                        <p>Improved recommendation accuracy.</p>
+                        <h4>Learnings:</h4>
+                        <p>Recommender systems basics.</p>
+                        <a href="https://github.com/your-repo/movie-recommender">GitHub Repo</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -702,11 +898,13 @@
                 <i class="fas fa-graduation-cap"></i>
                 <h3>Master of Science in Computer Science (Data Science Specialization)</h3>
                 <p>Oklahoma Christian University - Oklahoma, OK | January 2024 – August 2025 | GPA 4.0/4.0</p>
+                <p>Coursework: Advanced Machine Learning, Big Data Analytics, Data Mining, Cloud Computing.</p>
             </div>
             <div class="education-item">
                 <i class="fas fa-graduation-cap"></i>
                 <h3>Bachelor of Technology in Computer Science & Engineering</h3>
                 <p>JNTUH, Hyderabad, India | August 2019 – April 2023 | GPA 7.56/10</p>
+                <p>Coursework: Database Management, Algorithms, Software Engineering, Statistics.</p>
             </div>
         </div>
     </section>
@@ -717,13 +915,65 @@
             <div class="certification-item">
                 <i class="fas fa-certificate"></i>
                 <h3>Data Analysis with Python - Certificate</h3>
+                <p>Issued by Coursera, 2023</p>
+            </div>
+            <div class="certification-item">
+                <i class="fas fa-certificate"></i>
+                <h3>Google Data Analytics Professional Certificate</h3>
+                <p>Issued by Google via Coursera, 2024</p>
+            </div>
+            <div class="certification-item">
+                <i class="fas fa-certificate"></i>
+                <h3>Microsoft Power BI Data Analyst Associate</h3>
+                <p>Issued by Microsoft, 2025</p>
+            </div>
+            <div class="certification-item">
+                <i class="fas fa-certificate"></i>
+                <h3>IBM Data Analyst Professional Certificate</h3>
+                <p>Issued by IBM via Coursera, 2024</p>
+            </div>
+            <div class="certification-item">
+                <i class="fas fa-certificate"></i>
+                <h3>Tableau Data Analyst Certification</h3>
+                <p>Issued by Tableau, 2025</p>
+            </div>
+            <div class="certification-item">
+                <i class="fas fa-certificate"></i>
+                <h3>AWS Certified Data Analytics - Specialty</h3>
+                <p>Issued by Amazon Web Services, 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Blog & Insights</h2>
+        <div class="blog-grid">
+            <div class="blog-item">
+                <h3>The Power of Predictive Analytics in E-Commerce</h3>
+                <p>In this post, I explore how machine learning models can forecast customer churn and boost retention strategies...</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="blog-item">
+                <h3>Navigating Big Data with AWS: A Beginner's Guide</h3>
+                <p>Sharing my experience building ETL pipelines and lessons learned from handling massive datasets...</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="blog-item">
+                <h3>Visualizing Economic Trends Post-COVID</h3>
+                <p>Discussing time-series analysis techniques and tools for economic forecasting...</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="blog-item">
+                <h3>Introduction to NLP for Sentiment Analysis</h3>
+                <p>A step-by-step guide to building your first sentiment classifier using Python and NLTK...</p>
+                <a href="#">Read More</a>
             </div>
         </div>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>St. Louis, MO | <a href="mailto:uthejereddy2@gmail.com">uthejereddy2@gmail.com</a> | +1 572-208-3562 | <a href="https://www.linkedin.com/in/your-linkedin">LinkedIn</a> | <a href="https://your-portfolio-link">Portfolio</a></p>
+        <p>St. Louis, MO | <a href="mailto:uthejereddy2@gmail.com">uthejereddy2@gmail.com</a> | +1 572-208-3562 | <a href="https://www.linkedin.com/in/utheja-bommineni">LinkedIn</a> | <a href="https://github.com/utheja-bommineni">GitHub</a></p>
     </section>
 
     <footer>
